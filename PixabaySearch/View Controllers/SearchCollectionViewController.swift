@@ -135,23 +135,6 @@ final class SearchCollectionViewController: UICollectionViewController {
         return searchController.isActive && !searchBarIsEmpty()
     }
     
-    // MARK: - Navigation
-    
-    /// Preparation before navigation.
-    ///
-    /// - Parameters:
-    ///   - segue: segue
-    ///   - sender: object sent over
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Pass the selected object to the new view controller.
-        if let identifier = segue.identifier,
-            identifier == Segue.ShowImage.rawValue,
-            let image = sender as? Image,
-            let viewImageViewController = segue.destination as? ViewImageViewController {
-            viewImageViewController.image = image
-        }
-    }
-    
     // MARK: UICollectionViewDataSource
     
     /// How many sections in collection view.
