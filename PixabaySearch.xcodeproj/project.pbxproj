@@ -8,20 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		9D61C4D02109627F008E350A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61C4CF2109627F008E350A /* AppDelegate.swift */; };
-		9D61C4D22109627F008E350A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61C4D12109627F008E350A /* ViewController.swift */; };
+		9D61C4D22109627F008E350A /* SearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61C4D12109627F008E350A /* SearchCollectionViewController.swift */; };
 		9D61C4D52109627F008E350A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D61C4D32109627F008E350A /* Main.storyboard */; };
 		9D61C4D721096280008E350A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D61C4D621096280008E350A /* Assets.xcassets */; };
 		9D61C4DA21096280008E350A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D61C4D821096280008E350A /* LaunchScreen.storyboard */; };
+		9D6DE2E3210995BE00C72973 /* DispatchQueue+DebounceThrottle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DE2E2210995BE00C72973 /* DispatchQueue+DebounceThrottle.swift */; };
+		9D6DE2E521099DFC00C72973 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DE2E421099DFC00C72973 /* Api.swift */; };
+		9D6DE2E72109C01700C72973 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9D6DE2E62109C01700C72973 /* Podfile */; };
+		9DF428C7210965AE003156F5 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF428C6210965AE003156F5 /* Configuration.swift */; };
+		9DF428CC21096FBA003156F5 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF428CB21096FBA003156F5 /* ImageCollectionViewCell.swift */; };
+		9DF428CE21097402003156F5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF428CD21097402003156F5 /* Image.swift */; };
+		9DF428D0210979F1003156F5 /* TagsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF428CF210979F1003156F5 /* TagsCollectionViewCell.swift */; };
+		FA7500911EF296DD0AE783C7 /* Pods_PixabaySearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F93DBAC6FDD70D70306C1AC /* Pods_PixabaySearch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F93DBAC6FDD70D70306C1AC /* Pods_PixabaySearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixabaySearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4116B8FD7AE00846714943B0 /* Pods-PixabaySearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixabaySearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-PixabaySearch/Pods-PixabaySearch.release.xcconfig"; sourceTree = "<group>"; };
 		9D61C4CC2109627F008E350A /* PixabaySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixabaySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D61C4CF2109627F008E350A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D61C4D12109627F008E350A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D61C4D12109627F008E350A /* SearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewController.swift; sourceTree = "<group>"; };
 		9D61C4D42109627F008E350A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D61C4D621096280008E350A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D61C4D921096280008E350A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D61C4DB21096280008E350A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D6DE2E2210995BE00C72973 /* DispatchQueue+DebounceThrottle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+DebounceThrottle.swift"; sourceTree = "<group>"; };
+		9D6DE2E421099DFC00C72973 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		9D6DE2E62109C01700C72973 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DF428C6210965AE003156F5 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		9DF428CB21096FBA003156F5 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		9DF428CD21097402003156F5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		9DF428CF210979F1003156F5 /* TagsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E0184A4E619404BBE64EF211 /* Pods-PixabaySearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixabaySearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PixabaySearch/Pods-PixabaySearch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7500911EF296DD0AE783C7 /* Pods_PixabaySearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		929A7045B113B0A74C495106 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0184A4E619404BBE64EF211 /* Pods-PixabaySearch.debug.xcconfig */,
+				4116B8FD7AE00846714943B0 /* Pods-PixabaySearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9D61C4C32109627F008E350A = {
 			isa = PBXGroup;
 			children = (
+				9D6DE2E62109C01700C72973 /* Podfile */,
 				9D61C4CE2109627F008E350A /* PixabaySearch */,
 				9D61C4CD2109627F008E350A /* Products */,
+				929A7045B113B0A74C495106 /* Pods */,
+				AA6DACDD76646CD39C492A66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +85,76 @@
 		9D61C4CE2109627F008E350A /* PixabaySearch */ = {
 			isa = PBXGroup;
 			children = (
+				9D6DE2E1210995A800C72973 /* Extensions */,
+				9DF428C421096527003156F5 /* Models */,
+				9DF428C02109649D003156F5 /* Storyboards */,
+				9DF428BF21096494003156F5 /* View Controllers */,
+				9DF428C1210964A4003156F5 /* Resources */,
 				9D61C4CF2109627F008E350A /* AppDelegate.swift */,
-				9D61C4D12109627F008E350A /* ViewController.swift */,
-				9D61C4D32109627F008E350A /* Main.storyboard */,
-				9D61C4D621096280008E350A /* Assets.xcassets */,
-				9D61C4D821096280008E350A /* LaunchScreen.storyboard */,
-				9D61C4DB21096280008E350A /* Info.plist */,
+				9DF428C6210965AE003156F5 /* Configuration.swift */,
+				9D6DE2E421099DFC00C72973 /* Api.swift */,
 			);
 			path = PixabaySearch;
+			sourceTree = "<group>";
+		};
+		9D6DE2E1210995A800C72973 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D6DE2E2210995BE00C72973 /* DispatchQueue+DebounceThrottle.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9DF428BF21096494003156F5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9DF428CA21096FA1003156F5 /* Collection View Cells */,
+				9D61C4D12109627F008E350A /* SearchCollectionViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9DF428C02109649D003156F5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9D61C4D32109627F008E350A /* Main.storyboard */,
+				9D61C4D821096280008E350A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9DF428C1210964A4003156F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D61C4D621096280008E350A /* Assets.xcassets */,
+				9D61C4DB21096280008E350A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9DF428C421096527003156F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9DF428CD21097402003156F5 /* Image.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9DF428CA21096FA1003156F5 /* Collection View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9DF428CB21096FBA003156F5 /* ImageCollectionViewCell.swift */,
+				9DF428CF210979F1003156F5 /* TagsCollectionViewCell.swift */,
+			);
+			path = "Collection View Cells";
+			sourceTree = "<group>";
+		};
+		AA6DACDD76646CD39C492A66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F93DBAC6FDD70D70306C1AC /* Pods_PixabaySearch.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D61C4DE21096280008E350A /* Build configuration list for PBXNativeTarget "PixabaySearch" */;
 			buildPhases = (
+				DFD546EBE27E403A99D65A5C /* [CP] Check Pods Manifest.lock */,
 				9D61C4C82109627F008E350A /* Sources */,
 				9D61C4C92109627F008E350A /* Frameworks */,
 				9D61C4CA2109627F008E350A /* Resources */,
+				8BA49AAED2D83A2E7529751C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,18 +219,72 @@
 			files = (
 				9D61C4DA21096280008E350A /* LaunchScreen.storyboard in Resources */,
 				9D61C4D721096280008E350A /* Assets.xcassets in Resources */,
+				9D6DE2E72109C01700C72973 /* Podfile in Resources */,
 				9D61C4D52109627F008E350A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8BA49AAED2D83A2E7529751C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PixabaySearch/Pods-PixabaySearch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AXPhotoViewer/AXPhotoViewer.framework",
+				"${BUILT_PRODUCTS_DIR}/AXStateButton/AXStateButton.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AXPhotoViewer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AXStateButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PixabaySearch/Pods-PixabaySearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFD546EBE27E403A99D65A5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PixabaySearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9D61C4C82109627F008E350A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D61C4D22109627F008E350A /* ViewController.swift in Sources */,
+				9D6DE2E521099DFC00C72973 /* Api.swift in Sources */,
+				9DF428CE21097402003156F5 /* Image.swift in Sources */,
+				9D6DE2E3210995BE00C72973 /* DispatchQueue+DebounceThrottle.swift in Sources */,
+				9DF428D0210979F1003156F5 /* TagsCollectionViewCell.swift in Sources */,
+				9DF428CC21096FBA003156F5 /* ImageCollectionViewCell.swift in Sources */,
+				9D61C4D22109627F008E350A /* SearchCollectionViewController.swift in Sources */,
+				9DF428C7210965AE003156F5 /* Configuration.swift in Sources */,
 				9D61C4D02109627F008E350A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,11 +429,13 @@
 		};
 		9D61C4DF21096280008E350A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0184A4E619404BBE64EF211 /* Pods-PixabaySearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LAAKXKAVC9;
-				INFOPLIST_FILE = PixabaySearch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PixabaySearch/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +449,13 @@
 		};
 		9D61C4E021096280008E350A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4116B8FD7AE00846714943B0 /* Pods-PixabaySearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LAAKXKAVC9;
-				INFOPLIST_FILE = PixabaySearch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PixabaySearch/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,0 +1,6 @@
+framework module Pods_PixabaySearch {
+  umbrella header "Pods-PixabaySearch-umbrella.h"
+
+  export *
+  module * { export * }
+}
