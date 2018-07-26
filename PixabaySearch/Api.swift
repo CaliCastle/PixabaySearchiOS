@@ -9,6 +9,9 @@ final class Api {
     /// Base url.
     private let baseUrl = Configuration.apiBaseUrl
     
+    /// Number of images per page.
+    public var perPage = 36
+    
     /// Response completion handler for api requests.
     typealias ResponseHandler = ([Image]?) -> Void
     
@@ -18,12 +21,12 @@ final class Api {
     ///   - query: text to be searched
     ///   - handler: completion block
     public func search(_ query: String, page: Int, handler: (ResponseHandler)? = nil) {
-        Alamofire.request(Configuration.apiBaseUrl, method: HTTPMethod.get, parameters: ["key": Configuration.apiKey, "q": query, "image_type": "photo", "per_page": 35, "page": page])
+        Alamofire.request(Configuration.apiBaseUrl, method: HTTPMethod.get, parameters: ["key": Configuration.apiKey, "q": query, "image_type": "photo", "per_page": perPage, "page": page])
             .validate(contentType: ["application/json"])
             .responseJSON { response in
                 // Parse JSON to Dictionary
                 if let json = response.result.value as? [String: Any],
-                   let imagesJson = json["hits"] as? [[String: Any]] {
+                    let imagesJson = json["hits"] as? [[String: Any]] {
                     // Make a fresh image array
                     var images = [Image]()
                     
