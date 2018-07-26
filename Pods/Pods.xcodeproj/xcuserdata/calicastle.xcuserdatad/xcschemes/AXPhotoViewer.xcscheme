@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1000"
+   LastUpgradeVersion = "0940"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2E51EF8AD8286208770CB6D9DAC85CDD"
+               BlueprintIdentifier = "6189D02C75B5F0A5374E2DD0E1B5FF85"
                BuildableName = "AXPhotoViewer.framework"
                BlueprintName = "AXPhotoViewer"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2E51EF8AD8286208770CB6D9DAC85CDD"
+            BlueprintIdentifier = "6189D02C75B5F0A5374E2DD0E1B5FF85"
             BuildableName = "AXPhotoViewer.framework"
             BlueprintName = "AXPhotoViewer"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -16,7 +16,7 @@ import FLAnimatedImage_tvOS
 
 fileprivate let ZoomScaleEpsilon: CGFloat = 0.01
 
-@objc class AXZoomingImageView: UIScrollView, UIScrollViewDelegate {
+class AXZoomingImageView: UIScrollView, UIScrollViewDelegate {
     
     #if os(iOS)
     /// iOS-only tap gesture recognizer for zooming.
@@ -72,8 +72,12 @@ fileprivate let ZoomScaleEpsilon: CGFloat = 0.01
         self.showsHorizontalScrollIndicator = false
         self.isScrollEnabled = false
         self.bouncesZoom = true
-        self.decelerationRate = UIScrollView.DecelerationRate.fast;
+        self.decelerationRate = UIScrollViewDecelerationRateFast;
         self.delegate = self
+        
+        if #available(iOS 11.0, tvOS 11.0, *) {
+            self.contentInsetAdjustmentBehavior = .never
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -202,9 +206,6 @@ fileprivate let ZoomScaleEpsilon: CGFloat = 0.01
 
 }
 
-@objc protocol AXZoomingImageViewDelegate: AnyObject, NSObjectProtocol {
-    
-    @objc(zoomingImageView:maximumZoomScaleForImageSize:)
+protocol AXZoomingImageViewDelegate: class {
     func zoomingImageView(_ zoomingImageView: AXZoomingImageView, maximumZoomScaleFor imageSize: CGSize) -> CGFloat
-    
 }

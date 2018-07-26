@@ -56,7 +56,7 @@ pod install 'AXPhotoViewer'
 ```
 If you prefer not to use Cocoapods, add the contents of the 'Source' directory to your project to get started.
 
-**Note:** If you don't use Cocoapods, you must add `MobileCoreServices.framework` and `ImageIO.framework` to your project.
+**Note:** If you don't use Cocoapods, you must add `MobileCoreServices.framework`, `QuartzCore.framework`, and `ImageIO.framework` to your project.
 
 ### Configuration
 There are many configurable properties that can be set before presenting your `AXPhotosViewController`.
@@ -96,22 +96,15 @@ These views will be sized and stacked in the order that they are added. It's pos
 ### Network Integrations
 A network integration, in relation to this library, is a class conforming to the `AXNetworkIntegration` protocol. This protocol defines some methods to be used for downloading images, as well as delegating their completions (and errors) to the library. If you wish to create your own module for async downloading/caching of images and gifs, the protocol is fairly lightweight.
 
-Some pre-defined `AXNetworkIntegrations` have already been made as Cocoapod subspecs (SDWebImage, PINRemoteImage, AFNetworking, Kingfisher..., as well as a simple network integration using NSURLSession that will serve most people's purposes quite sufficiently). To use these pre-defined subspecs, simply change your `Podfile`:
+Some pre-defined `AXNetworkIntegrations` have already been made as Cocoapod subspecs (SDWebImage, PINRemoteImage, AFNetworking, Kingfisher, Nuke..., as well as a simple network integration using NSURLSession that will serve most people's purposes quite sufficiently). To use these pre-defined subspecs, simply change your `Podfile`:
 
 ```ruby
 pod install 'AXPhotoViewer/Lite'
-```
-```ruby
 pod install 'AXPhotoViewer/SDWebImage'
-```
-```ruby
 pod install 'AXPhotoViewer/PINRemoteImage'
-```
-```ruby
 pod install 'AXPhotoViewer/AFNetworking'
-```
-```ruby
 pod install 'AXPhotoViewer/Kingfisher'
+pod install 'AXPhotoViewer/Nuke'
 ```
 
 To create your own `AXNetworkIntegration`:
@@ -123,6 +116,15 @@ let customNetworkIntegration = CustomNetworkIntegration() // instantiate your cu
 let dataSource = AXPhotosDataSource(photos: self.photos)
 let photosViewController = PhotosViewController(dataSource: dataSource, networkIntegration: customNetworkIntegration)
 ```
+
+#### Enabling Nuke's support for GIFs
+Nuke's support for downloading GIFs is disabled by default. If you want support for GIFs, you have to enabled it.
+
+```swift
+ImagePipeline.Configuration.isAnimatedImageDataEnabled = true
+```
+
+More details here: [Nuke animated images](https://github.com/kean/Nuke#animated-images)
 
 ### Customization
 As mentioned earlier, there are many configurable properties on each of the modules of the photo viewer, and you can access those modules through the `AXPhotosViewController`. For instance, you may replace the default loading view, caption view, and/or overlay title view with your own. These views must be self sizing, and conform to the `AXLoadingViewProtocol`, `AXCaptionViewProtocol`, and `AXOverlayTitleViewProtocol` respectively.

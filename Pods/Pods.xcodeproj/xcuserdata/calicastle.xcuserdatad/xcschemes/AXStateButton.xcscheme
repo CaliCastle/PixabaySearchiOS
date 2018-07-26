@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1000"
+   LastUpgradeVersion = "0940"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9931F967FB6653379ED2D93B81D885E2"
+               BlueprintIdentifier = "8D127FD4D365B63D34A4C794E88DE4D2"
                BuildableName = "AXStateButton.framework"
                BlueprintName = "AXStateButton"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9931F967FB6653379ED2D93B81D885E2"
+            BlueprintIdentifier = "8D127FD4D365B63D34A4C794E88DE4D2"
             BuildableName = "AXStateButton.framework"
             BlueprintName = "AXStateButton"
             ReferencedContainer = "container:Pods.xcodeproj">

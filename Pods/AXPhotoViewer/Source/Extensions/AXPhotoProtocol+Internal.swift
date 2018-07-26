@@ -6,6 +6,12 @@
 //  Copyright © 2017 Alex Hill. All rights reserved.
 //
 
+#if os(iOS)
+import FLAnimatedImage
+#elseif os(tvOS)
+import FLAnimatedImage_tvOS
+#endif
+
 enum AXPhotoLoadingState {
     case notLoaded, loading, loaded, loadingCancelled, loadingFailed
 }

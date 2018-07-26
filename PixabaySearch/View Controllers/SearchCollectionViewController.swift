@@ -17,7 +17,7 @@ final class SearchCollectionViewController: UICollectionViewController {
             // Listen for loading.
             if loading {
                 // Create the Activity Indicator
-                let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+                let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
                 // Add it to view.
                 view.addSubview(activityIndicator)
                 // Set frame.
@@ -116,12 +116,12 @@ final class SearchCollectionViewController: UICollectionViewController {
                 
                 DispatchQueue.main.async {
                     // Batch update collection view.
-                    self.collectionView.performBatchUpdates({
-                        self.collectionView.reloadSections([0])
+                    self.collectionView?.performBatchUpdates({
+                        self.collectionView?.reloadSections([0])
                     })
                     // Scroll to top
-                    if self.collectionView.numberOfItems(inSection: 0) > 0 {
-                        self.collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: true)
+                    if (self.collectionView?.numberOfItems(inSection: 0))! > 0 {
+                        self.collectionView?.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: true)
                     }
                 }
             }
@@ -133,23 +133,6 @@ final class SearchCollectionViewController: UICollectionViewController {
     /// - Returns: `true` means searching
     fileprivate func isSearching() -> Bool {
         return searchController.isActive && !searchBarIsEmpty()
-    }
-    
-    // MARK: - Navigation
-    
-    /// Preparation before navigation.
-    ///
-    /// - Parameters:
-    ///   - segue: segue
-    ///   - sender: object sent over
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Pass the selected object to the new view controller.
-        if let identifier = segue.identifier,
-            identifier == Segue.ShowImage.rawValue,
-            let image = sender as? Image,
-            let viewImageViewController = segue.destination as? ViewImageViewController {
-            viewImageViewController.image = image
-        }
     }
     
     // MARK: UICollectionViewDataSource

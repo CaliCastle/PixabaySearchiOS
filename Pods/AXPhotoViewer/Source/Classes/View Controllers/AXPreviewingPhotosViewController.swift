@@ -61,18 +61,18 @@ import FLAnimatedImage
 
         var `networkIntegration` = networkIntegration
         if networkIntegration == nil {
-            #if USE_SDWEBIMAGE
+            #if canImport(SDWebImage)
             networkIntegration = SDWebImageIntegration()
-            #elseif USE_PINREMOTEIMAGE
+            #elseif canImport(PINRemoteImage)
             networkIntegration = PINRemoteImageIntegration()
-            #elseif USE_AFNETWORKING
+            #elseif canImport(AFNetworking)
             networkIntegration = AFNetworkingIntegration()
-            #elseif USE_KINGFISHER
+            #elseif canImport(Kingfisher)
             networkIntegration = KingfisherIntegration()
-            #elseif USE_DEFAULT
-            networkIntegration = SimpleNetworkIntegration()
+            #elseif canImport(Nuke)
+            networkIntegration = NukeIntegration()
             #else
-            fatalError("Must be using one of the network integration subspecs if no `AXNetworkIntegration` is provided.")
+            networkIntegration = SimpleNetworkIntegration()
             #endif
         }
         

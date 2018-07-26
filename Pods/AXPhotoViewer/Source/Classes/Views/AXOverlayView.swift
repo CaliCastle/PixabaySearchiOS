@@ -48,7 +48,7 @@ import UIKit
     }
     
     /// The title text attributes inherited by the `title`.
-    @objc public var titleTextAttributes: [NSAttributedString.Key: Any]? {
+    @objc public var titleTextAttributes: [NSAttributedStringKey: Any]? {
         didSet {
             self.updateTitleBarButtonItem()
         }
@@ -183,9 +183,9 @@ import UIKit
             self.bottomStackContainer.addSubview(captionView)
         }
         
-//        NotificationCenter.default.addObserver(forName: .UIContentSizeCategory.didChangeNotification, object: nil, queue: .main) { [weak self] (note) in
-//            self?.setNeedsLayout()
-//        }
+        NotificationCenter.default.addObserver(forName: .UIContentSizeCategoryDidChange, object: nil, queue: .main) { [weak self] (note) in
+            self?.setNeedsLayout()
+        }
     }
     
     public required init?(coder aDecoder: NSCoder) {
@@ -383,7 +383,7 @@ import UIKit
     }
     
     func updateTitleBarButtonItem() {
-        func defaultAttributes() -> [NSAttributedString.Key: Any] {
+        func defaultAttributes() -> [NSAttributedStringKey: Any] {
             let pointSize: CGFloat = 17.0
             var font: UIFont
             if #available(iOS 8.2, *) {
@@ -393,8 +393,8 @@ import UIKit
             }
             
             return [
-                NSAttributedString.Key.font: font,
-                NSAttributedString.Key.foregroundColor: UIColor.white
+                NSAttributedStringKey.font: font,
+                NSAttributedStringKey.foregroundColor: UIColor.white
             ]
         }
         
